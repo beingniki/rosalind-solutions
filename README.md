@@ -1,44 +1,39 @@
-# NetCure.ai
+# Rosalind Solutions
 
-**NetCure.ai** is an AI-powered platform for drug repositioning predictions using network-based machine learning and real-time biomedical validation.
+A running log of solved [Rosalind](https://rosalind.info) bioinformatics problems — Python solutions with unit tests, added as part of a regular practice habit.
 
-## 🚀 Features
-- Lightweight model with up to 30,000 valid nodes
-- Real-time PubMed validation of drug-disease predictions
-- Interactive Streamlit-based UI
-- Drug, gene, protein, and disease network integration
-- Contact form for user queries
-- Fully Mac-compatible development environment
+## Structure
 
-## 📦 Requirements
-Install dependencies with:
+Each problem lives in its own folder, named after the Rosalind problem ID:
+
+```
+rosalind-solutions/
+├── subs/
+│   ├── solution.py
+│   ├── test_solution.py
+│   ├── sample_input.txt
+│   └── README.md
+└── ...
+```
+
+Every folder includes:
+- `solution.py` — the solution, with a CLI entry point (`python solution.py input.txt`)
+- `test_solution.py` — unit tests covering the sample case plus edge cases
+- `sample_input.txt` — Rosalind's sample dataset for that problem
+- `README.md` — problem summary, approach notes, and a link to the problem page
+
+## Problems solved
+
+| ID | Problem | Topic | Link |
+|---|---|---|---|
+| [SUBS](subs/) | Finding a Motif in DNA | String matching | [rosalind.info/problems/subs](https://rosalind.info/problems/subs/) |
+
+## Running tests
+
+Each folder's tests can be run individually:
 
 ```bash
-pip install -r requirements.txt
+cd subs
+python test_solution.py
+# or: pytest
 ```
-
-## 🧪 Run the App
-
-```bash
-streamlit run final_app.py
-```
-
-## 🗂 Project Structure
-
-```
-netcure_mac_ready/
-├── final_app.py
-├── net_logo.png
-├── requirements.txt
-├── README.md
-└── .streamlit/
-    └── config.toml
-```
-
-## 🧠 About
-
-This project predicts potential drug repositioning opportunities by modeling biomedical data as a graph and applying AI for link prediction. Each predicted link is verified via real-time PubMed search.
-
-## ✉️ Contact
-
-For questions or feature requests, use the contact form in the app or email: your.email@example.com

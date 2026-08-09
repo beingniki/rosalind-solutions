@@ -1,12 +1,12 @@
-# SUBS — Finding a Motif in DNA
+# SUBS - Finding a Motif in DNA
 
 Rosalind problem: given a DNA string `s` and a shorter motif `t`, find every
 1-indexed position in `s` where `t` occurs, including overlapping matches.
 
 ## Files
-- `solution.py` — solution + CLI entry point
-- `test_solution.py` — unit tests (run with `python test_solution.py` or `pytest`)
-- `sample_input.txt` — Rosalind's sample dataset
+- `solution.py` - solution + CLI entry point
+- `test_solution.py` - unit tests (run with `python test_solution.py` or `pytest`)
+- `sample_input.txt` - Rosalind's sample dataset
 
 ## Run
 ```bash
