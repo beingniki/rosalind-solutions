@@ -1,4 +1,4 @@
-# GRPH — Overlap Graphs
+# GRPH - Overlap Graphs
 
 Rosalind problem: given DNA sequences in FASTA format, build the overlap
 graph O_k — a directed edge from sequence A to B exists if the last k
@@ -8,9 +8,9 @@ This is a simplified model of genome assembly: overlapping read ends
 suggest two reads come from adjacent regions of the genome.
 
 ## Files
-- `solution.py` — FASTA parser + overlap-edge finder, with CLI
-- `test_solution.py` — unit tests (run with `python test_solution.py` or `pytest`)
-- `sample_input.fasta` — Rosalind's sample dataset
+- `solution.py` : FASTA parser + overlap-edge finder, with CLI
+- `test_solution.py` : unit tests (run with `python test_solution.py` or `pytest`)
+- `sample_input.fasta` : Rosalind's sample dataset
 
 ## Run
 ```bash
